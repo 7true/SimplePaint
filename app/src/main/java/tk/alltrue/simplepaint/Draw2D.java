@@ -50,7 +50,6 @@ public class Draw2D extends View {
         canvas.drawText("Green field", 30, height - 32, mPaint);
 
         // angle text
-        // int x = 810;
         int x = width - 175;
         int y = 195;
 
@@ -61,12 +60,13 @@ public class Draw2D extends View {
         canvas.save();
         canvas.rotate(-45, x + mRect.exactCenterX(), y + mRect.exactCenterY());
 
-        // Рисуем текст
+        // text
         mPaint.setStyle(Paint.Style.FILL);
         canvas.drawText(beam, x, y, mPaint);
 
         canvas.restore();
 
+        //png
         canvas.drawBitmap(mBitmap, width - mBitmap.getWidth(), height - mBitmap.getHeight() - 10, mPaint);
     }
 }
