@@ -18,7 +18,7 @@ public class Draw2D extends View {
     public Draw2D(Context context) {
         super(context);
         Resources res = this.getResources();
-        mBitmap = BitmapFactory.decodeResource(res, R.drawable.pigsmall);
+        mBitmap = BitmapFactory.decodeResource(res, R.drawable.pig_png_1023764);
     }
 
     @Override
